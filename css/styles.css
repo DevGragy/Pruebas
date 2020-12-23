@@ -1155,10 +1155,12 @@ footer {
     .insta-pictures {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 40px 20px;
     }
 
     .insta-titulo h2 {
         text-align: center;
+        font-size: 34px;
     }
 
     /* Footer */
