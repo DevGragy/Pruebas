@@ -1,0 +1,1197 @@
+/**Variables**/
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #000000;
+    --color-text: #fffcfa;
+    --color-alternativeOne: #f2f2f2;
+    --color-hover: #e07a5f;
+    --color-semiBlack: #212227;
+    --color-semiBlack2: #222831;
+    --font-Spinnaker: "Spinnaker", sans-serif;
+    --font-Sacramento: "Sacramento", cursive;
+    --font-titulos: "Raleway", sans-serif;
+    --font-contenidos: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Globales */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-weight: 500;
+    font-family: var(--font-contenidos);
+    background-color: var(--color-primary);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font-titulos);
+}
+.contenedor {
+    width: 1200px;
+    margin: 0 auto;
+}
+.sessions {
+    margin-bottom: 40px;
+}
+.centrar {
+    text-align: center;
+}
+/* Utilidades */
+.wd-85 {
+    width: 85%;
+}
+
+.clk {
+    cursor: pointer;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.wd-75 {
+    width: 75%;
+}
+.btn-orng {
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}
+.btn-orng:hover {
+    background-color: var(--color-hover);
+    transition: all 0.2s ease-in-out;
+    color: var(--color-primary);
+}
+.btn-black {
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: var(--color-primary);
+    background-color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+.btn-black:hover {
+    background-color: var(--color-hover);
+    transition: all 0.2s ease-in-out;
+    color: var(--color-primary);
+}
+.center {
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px;
+}
+/* Header */
+header {
+    background-color: var(--color-secondary);
+}
+.inicio {
+    /* background-color: var(--color-secondary); */
+    background-image: url(../img/fondo_principal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/** Navbar **/
+.header-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.header-inicio a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.header-inicio h2 {
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.header-sects ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-sects li {
+    list-style: none;
+}
+
+.header-sects a {
+    text-decoration: none;
+    padding: 20px 30px;
+    display: block;
+    color: var(--color-primary);
+}
+
+.header-sects li a:hover {
+    color: var(--color-hover);
+    transition: all 0.2s ease-in-out;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.header-social-media {
+    background-color: var(--color-secondary);
+}
+
+.header-social-media ul {
+    display: flex;
+    justify-content: center;
+}
+
+.header-social-media li {
+    list-style: none;
+    padding: 15px 60px;
+    color: var(--color-primary);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-social-media li:last-child {
+    padding-right: 0px;
+}
+
+.header-social-media h3 {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.header-social-media img {
+    max-width: 60px;
+}
+
+.header-contenido {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-contenido img {
+    width: 500px;
+    justify-self: center;
+}
+
+.header-texto {
+    color: var(--color-primary);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.header-texto h1 {
+    font-size: 140px;
+    font-weight: 400;
+    font-family: var(--font-Sacramento);
+}
+
+.header-texto h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.header-texto a {
+    text-decoration: none;
+    align-self: center;
+    margin-top: 80px;
+    font-size: 16px;
+}
+
+/** Un poco de Dham **/
+.about-dham {
+    padding: 120px 0;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-dham img {
+    width: 600px;
+}
+
+.about-img {
+    background-image: url(../img/cover1.jfif);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-attachment: fixed;
+}
+
+.contenido-about {
+    display: flex;
+    background-color: var(--color-alternativeOne);
+    flex: 1 1 auto;
+    justify-content: space-between;
+}
+
+.texto-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+}
+
+.texto-about h2 {
+    font-size: 40px;
+    color: var(--color-white);
+    margin-top: 40px;
+}
+
+.texto-about p {
+    line-height: 2;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.info-box {
+    border: 2px solid #000;
+    padding: 60px 20px;
+    margin: 80px 40px;
+}
+
+.info-box div {
+    margin-bottom: 40px;
+}
+
+.info-box div:last-child {
+    margin-bottom: 0;
+}
+
+.info-box h3 {
+    font-size: 24px;
+}
+
+.info-box p {
+    margin-bottom: 40px;
+    line-height: 2;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/** Porque entrenar conmigo? **/
+.porque-dham {
+    color: var(--color-primary);
+}
+
+.porque-contenido {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    background-color: #000;
+}
+
+.porque-texto {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+    padding: 0 80px;
+    width: 40%;
+}
+
+.porque-texto h2 {
+    font-size: 36px;
+    margin: 40px 0;
+}
+
+.porque-texto p {
+    line-height: 2;
+    margin-bottom: 28px;
+    font-size: 14px;
+}
+
+.porque-texto a {
+    text-decoration: none;
+    align-self: flex-start;
+    font-size: 16px;
+    padding: 15px 60px;
+    margin-bottom: 40px;
+}
+
+.porque-contenido img {
+    width: 600px;
+}
+
+.porque-img {
+    background-image: url(../img/cover2.jpg);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: right;
+    background-size: 60% 100%;
+}
+
+/* Testimoniales */
+.testimoniales {
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.testim-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testim-titulo {
+    font-size: 36px;
+}
+
+.testim-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    flex-direction: column;
+    width: 80%;
+}
+
+.carta-ind {
+    padding: 16px;
+    margin: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-bottom: 1px solid #bbb;
+}
+
+.testim-cards h3 {
+    font-size: 28px;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+.testim-cards h4 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.carta-test p {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.carta-test img {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    margin: 0 40px;
+}
+
+.carta-test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.carta-ind:last-child {
+    border-bottom: 0;
+}
+
+.carta-info-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+/** Instagram Section **/
+.insta-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.insta-titulo {
+    font-size: 36px;
+}
+
+.insta-pictures {
+    margin: 40px 0;
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 60px;
+}
+
+.insta-pictures div {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.insta-pictures img {
+    transition: all 0.5s ease-in-out;
+}
+
+.insta-pictures img:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/*  Footer  */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+.contenido-footer {
+    background-color: var(--color-blue5);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.first-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.first-footer div {
+    align-self: flex-start;
+}
+
+.first-footer h3 {
+    margin-bottom: 40px;
+    font-size: 20px;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+.footer-sects {
+    align-self: center;
+}
+
+.footer-sects ul {
+    display: flex;
+    font-size: 16px;
+}
+
+.footer-sects li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.footer-sects li:last-child {
+    margin-right: 0;
+}
+
+.footer-sects a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.footer-sects li a:hover {
+    color: var(--color-hover);
+    transition: all 0.2s ease-in-out;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.social-media li {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media img {
+    width: 40px;
+}
+
+.social-media a {
+    margin-right: 20px;
+}
+
+.social-media a:last-child {
+    margin-right: 0;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-info a {
+    text-decoration: none;
+}
+
+.copyright {
+    padding: 20px 0;
+}
+
+/**Planes**/
+
+.planes_info {
+    margin: 40px auto;
+    text-align: center;
+}
+.planes_info h2 {
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+}
+
+.planes_info p {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-family: var(--font-contenidos);
+}
+.planes_details {
+    margin: 30px auto;
+    border: 2px solid #c4c4c4;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 65%;
+}
+.planes_details_image {
+    flex: 1 0 calc(70% - 2rem);
+}
+.planes_details_image img {
+    height: 100%;
+    width: 100%;
+}
+.planes_details_info {
+    padding: 25px;
+}
+.planes_details_info h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.planes_details_info p {
+    line-height: 1.5;
+    margin-bottom: -21px;
+    font-size: 1.2rem;
+    font-family: var(--font-contenidos);
+    text-align: justify;
+}
+.planes_details_info hr {
+    width: 100%;
+    background-color: gray;
+    height: 2px;
+    margin-bottom: 25px;
+}
+.info {
+    text-align: left;
+    font-family: var(--font-contenidos);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.info ul li {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-family: var(--font-contenidos);
+}
+.precio {
+    font-weight: bold;
+    font-size: 2rem;
+}
+.costo {
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+/*****Contacto*******/
+.contact_title {
+    margin-top: 40px;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+.contact_container {
+    display: flex;
+    height: 740px;
+    margin-top: 55px;
+}
+.contact_img {
+    width: 100%;
+    flex: 1 0 calc(50% - 1rem);
+}
+.contact_img img {
+    height: 100%;
+    width: 100%;
+}
+.container_contact_form {
+    flex: 1 0 calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-alternativeOne);
+}
+.contact_form {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #c4c4c4;
+    padding: 20px;
+}
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    height: 300px;
+}
+.form_group {
+    margin-bottom: 30px;
+}
+.form_group label {
+    display: block;
+    font-size: 1.8rem;
+    font-family: var(--font-contenidos);
+}
+.form_group input {
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin-top: 20px;
+    height: 30px;
+    background-color: transparent;
+}
+.form_group input:focus {
+    outline: none;
+}
+.form_group textarea {
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    height: 40px;
+    background-color: transparent;
+}
+.form_group textarea:focus {
+    outline: none;
+}
+.btn-submit {
+    display: flex;
+    justify-content: center;
+}
+.btn-submit input {
+    width: 45%;
+}
+.btn-submit input:hover {
+    cursor: pointer;
+}
+
+/** Responsive Design **/
+
+/** Desktops **/
+@media (min-width: 1200px) {
+    /* Un poco de Dham */
+    .info-box {
+        margin: 36px 28px;
+        padding: 42px 20px;
+    }
+
+    /* Porque Dham */
+    .porque-texto {
+        padding: 0 40px;
+    }
+
+    /* Testimoniales */
+    .carta-ind {
+        margin: 20px 0;
+    }
+}
+
+/** Tablets **/
+@media (min-width: 768px) and (max-width: 1199px) {
+    /* Header */
+    .header-contenido {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-texto h1 {
+        font-size: 120px;
+    }
+
+    .header-texto h3 {
+        font-size: 60px;
+    }
+
+    .header-texto a {
+        font-size: 28px;
+        width: 90%;
+        margin-top: 60px;
+    }
+
+    .header-social-media {
+        display: none;
+    }
+
+    /* Navbar */
+    .toggle-button {
+        display: flex;
+    }
+
+    .header-sects {
+        display: none;
+        width: 100%;
+    }
+
+    .header-navbar {
+        background-color: var(--color-secondary);
+    }
+
+    .header-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-sects ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header-sects li {
+        text-align: center;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .header-sects li a {
+        padding: 25px 15px;
+    }
+
+    .header-sects li a:hover {
+        background-color: var(--color-semiBlack2);
+        transition: all 0.2s ease-in-out;
+        color: var(--color-primary);
+    }
+
+    .header-sects.active {
+        display: flex;
+    }
+
+    .header-contenido img {
+        width: 450px;
+    }
+
+    /* Contenido About */
+    .about-dham {
+        width: 100%;
+    }
+
+    .contenido-about {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: var(--color-primary);
+    }
+
+    .about-img {
+        background-attachment: local;
+        width: 100%;
+        background-position: center;
+    }
+
+    .about-img img {
+        width: 550px;
+    }
+
+    .texto-about {
+        width: 100%;
+    }
+
+    .info-box h3 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .info-box p {
+        font-size: 20px;
+    }
+
+    /* Porque Dham */
+    .porque-contenido {
+        width: 95%;
+        flex-direction: column;
+        background-color: var(--color-primary);
+    }
+
+    .porque-img {
+        order: -1;
+        width: 100%;
+        background-attachment: local;
+        background-position: 0;
+        background-size: auto;
+    }
+
+    .porque-img img {
+        width: 500px;
+    }
+
+    .porque-texto {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .porque-texto p {
+        font-size: 20px;
+    }
+
+    .porque-texto a {
+        width: 100%;
+        align-self: center;
+        font-size: 20px;
+    }
+
+    /* Testimoniales */
+    .carta-test {
+        flex-direction: column;
+    }
+    .carta-test img {
+        order: -1;
+        margin-bottom: 32px;
+    }
+
+    /* Insta pictures */
+    .insta-pictures {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    /* Footer */
+    .first-footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .first-footer div {
+        align-self: center;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .first-footer h3 {
+        margin-bottom: 18px;
+        font-size: 28px;
+    }
+
+    .footer-sects ul {
+        font-size: 20px;
+    }
+
+    .social-media {
+        margin: 0;
+    }
+
+    .footer-info a {
+        width: 100%;
+    }
+}
+
+/** Phones **/
+@media (max-width: 767px) {
+    /* Header */
+    .header-contenido {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-texto h1 {
+        font-size: 60px;
+    }
+
+    .header-texto h3 {
+        font-size: 40px;
+    }
+
+    .header-texto a {
+        font-size: 28px;
+        width: 90%;
+        margin-top: 60px;
+    }
+
+    .header-social-media {
+        display: none;
+    }
+
+    /* Navbar */
+    .toggle-button {
+        display: flex;
+    }
+
+    .header-sects {
+        display: none;
+        width: 100%;
+    }
+
+    .header-navbar {
+        background-color: var(--color-secondary);
+    }
+
+    .header-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-sects ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header-sects li {
+        text-align: center;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .header-sects li a {
+        padding: 25px 15px;
+    }
+
+    .header-sects li a:hover {
+        background-color: var(--color-semiBlack2);
+        transition: all 0.2s ease-in-out;
+        color: var(--color-primary);
+    }
+
+    .header-sects.active {
+        display: flex;
+    }
+
+    .header-contenido img {
+        width: 300px;
+    }
+
+    /* Contenido About */
+    .about-dham {
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    .contenido-about {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: var(--color-primary);
+    }
+
+    .about-img {
+        background-attachment: local;
+        width: 100%;
+        background-position: center;
+    }
+
+    .about-img img {
+        width: 550px;
+    }
+
+    .texto-about {
+        width: 100%;
+    }
+
+    .info-box {
+        margin: 32px 10px;
+        padding: 10px;
+    }
+
+    .info-box h3 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .info-box p {
+        font-size: 20px;
+    }
+
+    /* Porque Dham */
+    .porque-contenido {
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--color-primary);
+    }
+
+    .porque-img {
+        order: -1;
+        width: 100%;
+        background-attachment: local;
+        background-position: 0;
+        background-size: auto;
+    }
+
+    .porque-img img {
+        width: 500px;
+    }
+
+    .porque-texto {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .porque-texto p {
+        font-size: 20px;
+    }
+
+    .porque-texto a {
+        width: 100%;
+        align-self: center;
+        font-size: 20px;
+    }
+
+    /* Testimoniales */
+    .testim-titulo {
+        text-align: center;
+    }
+
+    .testim-cards {
+        width: 100%;
+    }
+
+    .carta-ind {
+        margin: 20px 10px;
+    }
+
+    .carta-test {
+        flex-direction: column;
+    }
+
+    .carta-test img {
+        order: -1;
+        margin-bottom: 32px;
+        width: 200px;
+        height: auto;
+    }
+    /* Insta pictures */
+    .insta-pictures {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .insta-titulo h2 {
+        text-align: center;
+    }
+
+    /* Footer */
+    .first-footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .first-footer div {
+        align-self: center;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .first-footer h3 {
+        margin-bottom: 18px;
+        font-size: 28px;
+    }
+
+    .footer-sects ul {
+        font-size: 20px;
+    }
+
+    .social-media {
+        margin: 0;
+    }
+
+    .footer-info a {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
