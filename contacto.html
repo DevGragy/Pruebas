@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:wght@300;400;500&family=Sacramento&family=Raleway&family=Spinnaker&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Dham Castell</title>
+    </head>
+    <body>
+        <header class="inicio">
+            <nav class="header-navbar">
+                <div class="header-inicio">
+                    <a href="index.php">
+                        <h2>Dham<strong>Castell</strong></h2>
+                    </a>
+                </div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="header-sects">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="planes.html">Planes</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">F.A.Q.</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="sessions">
+            <h2 class="contact_title">Contacto</h2>
+            <div class="contact_container">
+                <div class="contact_img">
+                    <img src="./img/contact.png" alt="ImagenContacto" />
+                </div>
+                <div class="container_contact_form">
+                    <form class="contact_form" id="contact_form" method="POST">
+                        <div class="form">
+                            <div class="form_group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" id="nombre" />
+                            </div>
+                            <div class="form_group">
+                                <label for="apellido">Apellidos</label>
+                                <input
+                                    type="text"
+                                    name="apellido"
+                                    id="apellido"
+                                />
+                            </div>
+                            <div class="form_group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" />
+                            </div>
+                            <div class="form_group">
+                                <label for="asunto">Asunto</label>
+                                <input type="text" name="asunto" id="asunto" />
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje"></textarea>
+                        </div>
+                        <div class="btn-submit">
+                            <input
+                                type="submit"
+                                class="btn-black"
+                                id="submit"
+                                value="Enviar"
+                            />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script src="js/contacto.js"></script>
+
+        <footer>
+            <div class="contenido-footer">
+                <div class="first-footer">
+                    <div class="footer-text">
+                        <h3>DhamCastell</h3>
+                        <div class="footer-sects">
+                            <ul>
+                                <li>
+                                    <a href="index.php">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="planes.php">Planes</a>
+                                </li>
+                                <li>
+                                    <a href="contacto.php">Contacto</a>
+                                </li>
+                                <li>
+                                    <a href="faq.php">F.A.Q.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <h3>Redes Sociales</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="facebook.com">
+                                        <img
+                                            src="img/icons/facebook.png"
+                                            alt=""
+                                        />
+                                    </a>
+
+                                    <a
+                                        href="https://www.instagram.com/dhamcastell/?hl=es-la"
+                                    >
+                                        <img
+                                            src="img/icons/instagram.png"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="youtube.com">
+                                        <img
+                                            src="img/icons/youtube.png"
+                                            alt=""
+                                        />
+                                    </a>
+
+                                    <a
+                                        href="https://wa.me/?texto=Me%20gustaria%20entrenar%20contigo"
+                                    >
+                                        <img
+                                            src="img/icons/whatsapp.png"
+                                            alt=""
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-info">
+                        <h3>Mas Información</h3>
+                        <a href="contacto.php" class="btn-orng">
+                            Contáctame!
+                        </a>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    &copy; 2020 Projec7 | Todos los derechos reservados.
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/navbar.js"></script>
+    </body>
+</html>
