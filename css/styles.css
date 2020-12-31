@@ -826,7 +826,7 @@ p {
     margin-left: 5px;
 }
 
-.active:after {
+.active-acc:after {
     content: "\2212";
 }
 
